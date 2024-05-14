@@ -6,14 +6,14 @@
 * [How To Run](#how-to-run)
 * [General Notes](#general-notes)
 * [File kalloc.c](#file-kallocc)
-* [Function freerange()](#function-freerange())
-* [Function kfree()](#function-kfree())
-* [Function kalloc()](#function-kalloc())
+    * [Function freerange()](#function-freerange())
+    * [Function kfree()](#function-kfree())
+    * [Function kalloc()](#function-kalloc())
 * [File trap.c](#file-trapc)
-* [Function usertrap()](#function-usertrap())
+    * [Function usertrap()](#function-usertrap())
 * [File vm.c](#file-vmc)
-* [Function uvmcopy()](#function-uvmcopy())
-* [Function copyout()](#function-copyout())
+    * [Function uvmcopy()](#function-uvmcopy())
+    * [Function copyout()](#function-copyout())
 <br/><br/>
 
 ## About The Project
