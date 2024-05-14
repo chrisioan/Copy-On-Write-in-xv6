@@ -25,10 +25,22 @@ Bla
   ```sh
   sudo apt install gcc
   ```
+* You will need a RISC-V "newlib" tool chain from https://github.com/riscv/riscv-gnu-toolchain, and qemu compiled for riscv64-softmmu. Once they are installed, and in your shell search path, you can run "make qemu".
 <br/><br/>
 
 ## How To Run 
-Bla
+When on the [xv6-project-2021](https://github.com/chrisioan/Copy-On-Write-on-xv6/tree/main/xv6-project-2021) directory of the project:
+```sh
+make qemu
+```
+Then execute the tests `cowtest` and `usertests`:
+```sh
+cowtest
+```
+```sh
+usertests
+```
+To exit from `qemu`, press `Ctrl+A` then `X`.
 <br/><br/>
 
 ## General Notes
