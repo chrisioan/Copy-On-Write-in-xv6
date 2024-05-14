@@ -1,4 +1,4 @@
-# Copy On Write on xv6
+# Copy On Write in xv6
 
 ## Table of contents
 * [About The Project](#about-the-project)
@@ -17,7 +17,11 @@
 <br/><br/>
 
 ## About The Project
-Bla
+The purpose of this project is to implement Copy-On-Write (COW) in the xv6 kernel.
+
+The current implementation of the `fork()` system call in xv6 copies the entire user-space memory of the parent process to the child. Additionally, this task is often unnecessary, especially when *fork()* is followed by an `exec()` in the child, which discards the copied memory without it being used for the most part. However, if both processes (parent and child) share a page and one or both of them write to it, then a separate copy is required for each of them.
+
+The goal of supporting Copy-On-Write (COW) during *fork()* is to defer the allocation and copying of physical memory pages for the child until it actually needs to use them, if indeed it needs them.
 <br/><br/>
 
 ## Requirements
