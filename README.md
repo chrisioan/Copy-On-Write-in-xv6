@@ -9,7 +9,7 @@
 * [Function freerange()](#function-freerange())
 * [Function kfree()](#function-kfree())
 * [Function kalloc()](#function-kalloc())
-* [File trap.c](#file-trap.c)
+* [File trap.c](#file-trapc)
 * [Function usertrap()](#function-usertrap())
 * [File vm.c](#file-vmc)
 * [Function uvmcopy()](#function-uvmcopy())
