@@ -1,0 +1,8 @@
+# Ignore everything:
+/*
+
+# Except these:
+!.gitignore
+!xv6-project-2021/
+!K22_CW2_2021-2022.pdf
+!README.md
